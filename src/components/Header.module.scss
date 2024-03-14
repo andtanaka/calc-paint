@@ -1,0 +1,61 @@
+.headerContainer {
+  display: flex;
+  padding: 3em 0;
+  justify-content: center;
+}
+
+.menubar {
+  display: flex;
+  width: auto;
+  color: white;
+  font-weight: 600;
+  border-radius: 2em;
+  background-color: black;
+  justify-content: space-between;
+}
+
+$bgWidth: 10000px;
+
+.menuItem {
+  background-color: black;
+  padding: 0.5em 2em;
+  border-radius: 2em;
+  cursor: pointer;
+  animation: color 5s linear 5s slidein;
+
+  &:hover {
+    background-color: rgba(39, 39, 39, 0.8);
+  }
+}
+
+a.active {
+  color: black;
+  background: linear-gradient(
+    to right,
+    #ade6e2 16%,
+    #dcedc1 32%,
+    #ffd3b6 48%,
+    #ffaaa5 64%,
+    #ff8b94 80%,
+    #ade6e2 100%
+  );
+  background-size: $bgWidth 100%;
+  animation: bg 10s linear infinite;
+  border: none;
+}
+
+// a.active:nth-child(even) {
+//   background-color: blue !important;
+//   color: red;
+//   background-position: right;
+// }
+
+@keyframes bg {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: $bgWidth;
+  }
+}

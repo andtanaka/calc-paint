@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { setupListeners } from '@reduxjs/toolkit/dist/query';
+// import { setupListeners } from '@reduxjs/toolkit/dist/query';
 import infoSliceReducer from './slices/infoSlice';
 
 export const store = configureStore({
@@ -8,4 +8,4 @@ export const store = configureStore({
   },
 });
 
-setupListeners(store.dispatch);
+// setupListeners(store.dispatch);

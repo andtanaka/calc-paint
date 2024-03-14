@@ -1,0 +1,21 @@
+.backgoundImage {
+  //   min-height: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0%),
+      rgb(255 255 255 / 100%)
+    ),
+    url('../../public/assets/joanna-kosinska-mjC9apK53a8-unsplash.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.mainContainer {
+  margin: 1em 0;
+  padding-top: 2em;
+  min-height: 800px;
+  background-color: white;
+  border-top-left-radius: 5em;
+  border-top-right-radius: 5em;
+}
